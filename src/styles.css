@@ -1,0 +1,89 @@
+body {
+  font-family: "Roboto", sans-serif;
+  color: #132c33;
+  background: linear-gradient(
+    -70deg,
+    #b5e48c,
+    #99d98c,
+    #76c893,
+    #52b69a,
+    #34a0a4,
+    #168aad,
+    #1a759f,
+    #1e6091,
+    #184e77
+  );
+  background-size: 200%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: Gradient 25s ease infinite;
+}
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.Box {
+  width: 90%;
+  max-width: 550px;
+  margin: 8vh;
+  padding: 8vh;
+  box-shadow: 0px 5px 30px white;
+  border: solid 3px rgb(236, 231, 231);
+  border-radius: 90px;
+}
+
+.Header {
+  font-size: 4rem;
+  font-family: "Playfair Display", serif;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+
+.Header span {
+  color: #cac5cc;
+}
+
+.timer {
+  width: 100%;
+  margin: 0.5em 0;
+  text-align: center;
+  font-size: 4rem;
+  height: 5rem;
+}
+
+.buttons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.button {
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  background: #043f4d;
+  color: #fff;
+  padding: 0.6rem 0.8rem;
+  border: none;
+  border-radius: 5px;
+}
+
+.button:hover {
+  background: #51c4d3;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}
